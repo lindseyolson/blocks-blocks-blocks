@@ -5,3 +5,13 @@
   margin: 1em;
   display: inline-block;
 }
+
+#squareButton {
+  height: 3em;
+  border-radius: 0.5em;
+  margin-top: 5em;
+  margin-left: 5em;
+  margin-bottom: 5em;
+  background-color: #e6e6e6;
+  display: inline-block;
+}

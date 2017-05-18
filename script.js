@@ -1,35 +1,36 @@
 $(onReady);
 
+// start onReady function
 function onReady() {
-  console.log('loaded JS');
+  console.log('loaded JS'); // check onReady is working
 
-//register events
+// register events
+$('#squareButton').on('click', createBox); // create box button
+$('#outPutDiv').on('click', '.box', changeToBlack); // change selected box to black
+} // end onReady function
 
-$('#squareButton').on('click', createBox);
-//button
-$('#hey').on('click', '.box',  changeToBlack);
+//-------------------------------------------------
 
-}
-//change selected box to black
-
+// start createBox function
 function createBox(){
- var $d = $('<div>');
- $d.addClass('box');
+  console.log('createBox onClick working'); // check onClick is working
 
-var $color = randomColor();
-$d.css('background-color', $color);
-  console.log('createBox onClick working');
-  $('#hey').append($d);
-}
+  var $d = $('<div>'); // declares a variable that holds a <div>
+  $d.addClass('box'); // add the class '.box' to this <div>
 
+  var $color = randomColor(); // declares a variable that holds a random color, from the randomColor function
+  $d.css('background-color', $color); // set background-color of the selected div to $color
+  $('#outPutDiv').append($d); // append $d (div created from onClick) to #hey (div with id of hey)
+} // end createBox function
+
+
+// start changeToBlack function
 function changeToBlack () {
-$(this).css('background-color', 'black');
-}
+  $(this).css('background-color', 'black'); // sets background color of selected div to black
+} // end changeToBlack function
 
+
+// start randomColor function
 function randomColor(){
-  return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    //$('.box').css('background-color', randomColorChange);
-}
-//function randomNumber(min, max){
-    //return Math.floor(Math.random() * (1 + max - min) + min);
-//}
+  return '#'+(Math.random()*0xFFFFFF<<0).toString(16); // creates random color
+} // end randomColor function
