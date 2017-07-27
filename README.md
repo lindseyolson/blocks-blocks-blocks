@@ -7,4 +7,5 @@ On click of each box will turn that box black.
 
 ### Authors
 Lindsey Olson & Brett Miller
-#####5/18/2017
+
+##### 5/18/2017
