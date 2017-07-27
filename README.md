@@ -1,4 +1,4 @@
-## blocks-blocks-blocks: jQuery practice
+## blocks-blocks-blocks
 Early jQuery practice.
 
 Click button to create a new square box.
