@@ -1,11 +1,10 @@
 #### blocks-blocks-blocks: jQuery practice
 ##### 5/18/2017
-Beginning 
-One of the first exercises built from scratch with jQuery.
+Early jQuery practice.
 
-Create a button that makes a square box every time it is clicked.
-Created function that made each box load with a random color.
-Created function to turn boxes black when clicked on.
+Click button to create a new square box.
+Each box loads as a new random color.
+On click of each box will turn that box black.
 
 ##### Authors
-Brett & Lindsey
+Lindsey Olson & Brett Miller
